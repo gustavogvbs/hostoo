@@ -1,3 +1,153 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .header-link {
+    @apply text-white hover:text-white/70 transition-colors duration-200;
+  }
+
+  .header-link.icon {
+    @apply flex gap-1 [&_>_span]:rotate-90;
+    @apply [&_>_span]:hover:-rotate-90;
+    @apply [&_>_span]:transition-transform [&_>_span]:duration-300;
+  }
+
+  .header-logo-hostoo {
+    @apply transition-colors duration-200;
+    @apply text-white hover:text-ht-ligth-purple;
+  }
+
+  .header-link-secundary {
+    @apply transition-colors duration-200;
+    @apply ring-1 ring-white py-2 px-5 rounded-full;
+    @apply hover:bg-white hover:text-ht-black;
+  }
+
+  #header[data-header="active"] {
+    @apply bg-white shadow-lg;
+  }
+
+  #header[data-header="active"] .header-link-secundary {
+    @apply ring-ht-purple text-ht-purple;
+    @apply hover:bg-ht-purple hover:text-white;
+  }
+
+  #header[data-header="active"] .header-link {
+    @apply text-black hover:text-black/70;
+  }
+  #header[data-header="active"] .header-logo-hostoo {
+    @apply text-ht-purple hover:text-ht-lighter-purple;
+  }
+
+  .product-itens-link {
+    @apply text-black grid grid-cols-[36px_1fr] gap-4 items-center text-sm p-2 rounded-xl;
+    @apply hover:bg-ht-ligth-purple;
+    @apply transition duration-200;
+
+    @apply [&_p]:font-bold;
+  }
+
+  #header-link-product[data-status="active"] {
+    @apply text-ht-purple [&_>_span]:-rotate-90;
+    @apply [&_>_span]:hover:rotate-90;
+  }
+
+  .menu-product-list {
+    @apply transition-all duration-200;
+    @apply absolute translate-y-2 bg-white w-0 h-0 data-[product=active]:w-[392px] data-[product=active]:shadow-xl data-[product=active]:h-[304px] rounded-2xl overflow-hidden;
+  }
+
+  .button-green {
+    @apply bg-gradient-to-r from-ht-greem to-ht-ligth-greem;
+    @apply px-8 py-4 rounded-full text-base font-medium text-ht-black;
+    @apply hover:opacity-90;
+    @apply transition-opacity duration-200;
+  }
+
+  .button-green.small {
+    @apply py-2 px-5;
+  }
+
+  .button-purple {
+    @apply bg-ht-purple;
+    @apply px-8 py-4 rounded-full text-base font-medium text-white;
+    @apply hover:opacity-90;
+    @apply transition-opacity duration-200;
+  }
+
+  .button-purple.small {
+    @apply py-2 px-5;
+  }
+
+  .button-link-purple {
+    @apply flex gap-2 items-center text-base p-2 text-ht-lighter-purple;
+    @apply hover:text-ht-ligth-purple [&_>_span]:hover:rotate-90;
+    @apply [&_>_span]:transition-transform [&_>_span]:duration-200;
+    @apply transition-colors duration-300;
+  }
+
+  .button-link-purple.dark {
+    @apply text-ht-purple hover:text-ht-lighter-purple;
+  }
+
+  .button-header-slide {
+    @apply text-white text-base leading-tight text-center;
+    @apply bg-white/10 hover:bg-white/20;
+    @apply px-4 py-6 rounded-t-xl;
+    @apply flex flex-col justify-center items-center gap-1;
+    @apply transition duration-300;
+    @apply data-[status=active]:bg-white/35;
+  }
+  .button-header-slide span {
+    @apply block w-12 h-1 rounded-full bg-white/10;
+  }
+
+  .recursos-itens {
+    @apply py-2 px-6 flex gap-3 text-xl font-bold bg-white rounded-full cursor-default;
+    @apply transition-all duration-100;
+    @apply hover:bg-white/70;
+  }
+
+  .card-depoimentos {
+    @apply bg-ht-lighter-gray rounded-3xl p-8 flex flex-col gap-8;
+  }
+
+  .link-title-footer {
+    @apply text-base font-semibold leading-tight;
+  }
+
+  .list-links-footer {
+  }
+
+  .link-footer {
+    @apply py-2 text-base text-black/80 leading-tight block;
+    @apply hover:text-ht-purple transition-colors duration-100;
+  }
+}
+
+@layer utilities {
+  .text-gradient-client {
+    @apply bg-gradient-to-r from-ht-lighter-purple via-white to-white text-transparent bg-clip-text;
+  }
+
+  .bg-radio-gradient-black-to-light {
+    @apply bg-[radial-gradient(85.94%_99.25%_at_111.91%_-14.51%,_#95FF7B_0%,_#635BFF_37.44%,_#070723_70.06%)];
+  }
+
+  .bg-radio-gradient-black-to-lighter {
+    @apply bg-[radial-gradient(134.2%_169.27%_at_100%_0%,_#635BFF_0%,_#070723_100%)];
+  }
+
+  .bg-radio-gradient-center-to-border {
+    @apply bg-[radial-gradient(55.42%_51.67%_at_22.53%_-18.09%,_#36E28F_19.28%,_#635BFF_41.12%,_#070723_100%)];
+  }
+
+  .bg-radio-gradient-black-to-lighter-lg {
+    @apply bg-[radial-gradient(92.31%_102.31%_at_114.31%_-21.35%,_#635BFF_35.76%,_#070723_100%)];
+  }
+
+  .gradient-to-t-header {
+    @apply bg-gradient-to-b from-[rgba(22,_21,_71,_0)] via-[rgba(26,_24,_82,_0.3)] to-[rgba(27,_25,_84,_5)];
+  }
+}
