@@ -979,6 +979,36 @@ video {
   opacity: 0.8;
 }
 
+#silde-bar-position::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 1rem;
+  width: 0.75rem;
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 26 255 / var(--tw-bg-opacity));
+}
+
+.list-mark {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(64 73 104 / var(--tw-text-opacity));
+}
+
 .visible {
   visibility: visible;
 }
@@ -1007,6 +1037,38 @@ video {
   left: 50%;
 }
 
+.left-\[0\%\] {
+  left: 0%;
+}
+
+.left-\[100\%\] {
+  left: 100%;
+}
+
+.left-\[14\.285\%\] {
+  left: 14.285%;
+}
+
+.left-\[28\.57\%\] {
+  left: 28.57%;
+}
+
+.left-\[42\.855\%\] {
+  left: 42.855%;
+}
+
+.left-\[57\.14\%\] {
+  left: 57.14%;
+}
+
+.left-\[71\.425\%\] {
+  left: 71.425%;
+}
+
+.left-\[85\.71\%\] {
+  left: 85.71%;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -1017,6 +1079,14 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-3 {
+  top: 0.75rem;
 }
 
 .-z-10 {
@@ -1033,6 +1103,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .z-50 {
@@ -1075,6 +1149,10 @@ video {
 
 .mb-28 {
   margin-bottom: 7rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -1125,6 +1203,23 @@ video {
   display: none;
 }
 
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -1147,6 +1242,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-\[0\%\] {
+  width: 0%;
 }
 
 .w-\[100\%\] {
@@ -1225,6 +1328,15 @@ video {
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-full {
+  --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-2 {
@@ -1335,13 +1447,31 @@ video {
   border-radius: 0.5rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-ht-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 91 255 / var(--tw-border-opacity));
 }
 
 .bg-ht-black {
   --tw-bg-opacity: 1;
   background-color: rgb(7 7 35 / var(--tw-bg-opacity));
+}
+
+.bg-ht-dark-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 26 255 / var(--tw-bg-opacity));
 }
 
 .bg-ht-lighter-gray {
@@ -1490,6 +1620,10 @@ video {
   padding-bottom: 7rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1504,6 +1638,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-center {
@@ -1672,14 +1810,14 @@ video {
   --tw-ring-color: rgb(255 255 255 / 0.5);
 }
 
-.ring-zinc-300 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(212 212 216 / var(--tw-ring-opacity));
-}
-
 .ring-zinc-200 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(228 228 231 / var(--tw-ring-opacity));
+}
+
+.ring-zinc-300 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(212 212 216 / var(--tw-ring-opacity));
 }
 
 .transition-all {
@@ -1704,6 +1842,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .text-gradient-client {

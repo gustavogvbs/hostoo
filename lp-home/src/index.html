@@ -783,6 +783,93 @@
          </div>
         </form>
 
+        <form class="w-full pb-14">
+         <div class="w-full relative px-3 bg-ht-ligth-purple rounded-full">
+          <div class="w-full h-4 relative mb-3">
+           <div
+            id="slider-plan"
+            class="w-full h-12 cursor-pointer absolute z-20"
+           ></div>
+           <div
+            id="ball-slider"
+            class="transition-all duration-500 size-6 bg-white absolute left-[0%] -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 rounded-full border-2 border-solid border-ht-purple"
+           ></div>
+           <div
+            id="silde-bar-position"
+            class="transition-all duration-500 h-4 bg-ht-dark-purple w-[0%]"
+           ></div>
+           <div class="relative z-0 top-3">
+            <ul class="w-full flex justify-between relative">
+             <li class="list-mark left-[0%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >520 mb</span
+              >
+             </li>
+             <li class="list-mark left-[14.285%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >1 gb</span
+              >
+             </li>
+             <li class="list-mark left-[28.57%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >2 gb</span
+              >
+             </li>
+             <li class="list-mark left-[42.855%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >4 gb</span
+              >
+             </li>
+             <li class="list-mark left-[57.14%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >8 gb</span
+              >
+             </li>
+             <li class="list-mark left-[71.425%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >16 gb</span
+              >
+             </li>
+             <li class="list-mark left-[85.71%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >24 gb</span
+              >
+             </li>
+             <li class="list-mark left-[100%]">
+              <span
+               class="h-3 w-[2px] bg-ht-ligth-purple block absolute -translate-x-1/2 left-1/2 top-0 -translate-y-full"
+              ></span>
+              <span class="absolute left-1/2 -translate-x-1/2 w-14 text-center"
+               >32 gb</span
+              >
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </form>
+
         <div class="flex flex-col gap-3">
          <div class="flex flex-col gap-2">
           <div
@@ -847,7 +934,9 @@
             </span>
             <p class="text-ht-gray text-sm font-bold">RAM</p>
            </div>
-           <div class="text-ht-gray text-sm font-bold">512 MB</div>
+           <div class="text-ht-gray text-sm font-bold" id="ram-value">
+            512 MB
+           </div>
           </div>
           <div
            class="px-4 py-3 flex items-center justify-between ring-1 ring-zinc-200 rounded-lg"
@@ -903,7 +992,9 @@
             </span>
             <p class="text-ht-gray text-sm font-bold">CPU</p>
            </div>
-           <div class="text-ht-gray text-sm font-bold">1 Ghz</div>
+           <div class="text-ht-gray text-sm font-bold" id="cpu-value">
+            1 Ghz
+           </div>
           </div>
           <div
            class="px-4 py-3 flex items-center justify-between ring-1 ring-zinc-200 rounded-lg"
@@ -961,7 +1052,9 @@
             </span>
             <p class="text-ht-gray text-sm font-bold">SSD</p>
            </div>
-           <div class="text-ht-gray text-sm font-bold">15 GB</div>
+           <div class="text-ht-gray text-sm font-bold" id="ssd-value">
+            15 GB
+           </div>
           </div>
          </div>
          <div>
