@@ -117,9 +117,6 @@
   @apply text-base font-semibold leading-tight;
  }
 
- .list-links-footer {
- }
-
  .link-footer {
   @apply py-2 text-base text-black/80 leading-tight block;
   @apply hover:text-ht-purple transition-colors duration-100;
