@@ -747,11 +747,11 @@
           Você pode turbinar seu plano a qualquer momento.
          </p>
         </div>
-        <form class="py-8" action="">
+        <form class="py-8">
          <div class="grid grid-cols-2 rounded-3xl overflow-hidden">
           <label
            data-checked="check"
-           for="servidor-internacional"
+           for="internacional"
            type="button"
            class="input-checked-service"
           >
@@ -760,14 +760,16 @@
            <input
             class="hidden"
             type="radio"
-            id="servidor-internacional"
+            id="internacional"
+            value="internacional"
             name="services"
+            checked
            />
           </label>
 
           <label
            data-checked=""
-           for="servidor-nacional"
+           for="nacional"
            type="button"
            class="input-checked-service"
           >
@@ -776,7 +778,8 @@
            <input
             class="hidden"
             type="radio"
-            id="servidor-nacional"
+            value="nacional"
+            id="nacional"
             name="services"
            />
           </label>
@@ -792,6 +795,7 @@
            ></div>
            <div
             id="ball-slider"
+            data-active="1"
             class="transition-all duration-500 size-6 bg-white absolute left-[0%] -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 rounded-full border-2 border-solid border-ht-purple"
            ></div>
            <div
@@ -1084,14 +1088,16 @@
         <h4 class="text-2xl font-bold mb-6">Sua hospedagem</h4>
         <div class="flex justify-between items-center">
          <div class="flex flex-col gap-1">
-          <p class="text-base leading-tight line-through">DE R$88,59</p>
+          <p class="text-base leading-tight line-through">
+           DE R$ <span id="original-val">88,59</span>
+          </p>
           <span class="p-[2px] text-center bg-white rounded-full text-ht-purple"
-           >88% OFF</span
+           ><span id="percentage">88</span>% OFF</span
           >
          </div>
          <div class="flex flex-col text-end">
           <p class="text-3xl font-bold">
-           R$ <span class="text-5xl">8,90</span>
+           R$ <span class="text-5xl" id="plan-val">8,90</span>
           </p>
           <p class="text-base font-bold">por site /mês*</p>
          </div>

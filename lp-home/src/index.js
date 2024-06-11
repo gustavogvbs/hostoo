@@ -180,19 +180,25 @@ const ChangePlanType = (location, size) => {
  const ssd = document.getElementById("ssd-value");
  const cpu = document.getElementById("cpu-value");
 
+ const porcen = document.getElementById("percentage");
+ const originalVal = document.getElementById("original-val");
+ const value = document.getElementById("plan-val");
+
  const typesValue = TypeSizes[size];
  const planValue = ValuesPlan[size][location];
 
  ram.innerText = typesValue.ram;
  ssd.innerText = typesValue.ssd;
  cpu.innerText = typesValue.cpu;
+
+ const percentageValue = (planValue[0] * 100) / planValue[1];
+
+ porcen.innerText = Math.round(percentageValue);
+ originalVal.innerText = planValue[1].toFixed(2).replace(".", ",");
+ value.innerText = planValue[0].toFixed(2).replace(".", ",");
 };
 
 const ballSlider = document.getElementById("ball-slider");
-
-ballSlider.addEventListener("click", (e) => {
- console.log(e.timeStamp);
-});
 
 const sliderPlan = document.getElementById("slider-plan");
 
@@ -206,12 +212,9 @@ ballSlider.addEventListener("mousedown", (e) => {
 const setPosition = (e) => {
  const x = (e.offsetX * 100) / e.target.clientWidth;
 
- console.log(x, e);
-
  let menorDiferenca = Infinity;
  let numeroMaisProximo = null;
 
- // Percorra o array
  markPosition.forEach((numero) => {
   const diferenca = Math.abs(numero - x);
 
@@ -221,8 +224,41 @@ const setPosition = (e) => {
   }
  });
 
- console.log(numeroMaisProximo);
+ const index = markPosition.findIndex((e) => e == numeroMaisProximo);
+
+ ballSlider.setAttribute("data-active", index + 1);
+ ChangePlanType(
+  document.querySelector('input[name="services"]:checked').value,
+  index + 1
+ );
 
  ballSlider.style.left = numeroMaisProximo + "%";
  sliderBar.style.width = numeroMaisProximo + "%";
 };
+
+ChangePlanType(
+ document.querySelector('input[name="services"]:checked').value,
+ 1
+);
+
+const btnServices = document.querySelectorAll("label[data-checked]");
+
+btnServices.forEach((item) => {
+ item.addEventListener("click", (e) => {
+  const service = document.querySelector(
+   'input[name="services"]:checked'
+  ).value;
+
+  const size = document
+   .getElementById("ball-slider")
+   .getAttribute("data-active");
+  ChangePlanType(service, size);
+
+  document
+   .querySelector("label[data-checked='check']")
+   ?.setAttribute("data-checked", "hidden");
+  document
+   .querySelector(`label[for="${service}"]`)
+   .setAttribute("data-checked", "check");
+ });
+});
