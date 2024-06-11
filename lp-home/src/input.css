@@ -15,7 +15,7 @@
 
  .header-logo-hostoo {
   @apply transition-colors duration-200;
-  @apply text-white hover:text-ht-ligth-purple;
+  @apply text-white hover:text-ht-greem;
  }
 
  .header-link-secundary {
@@ -29,15 +29,15 @@
  }
 
  #header[data-header="active"] .header-link-secundary {
-  @apply ring-ht-purple text-ht-purple;
-  @apply hover:bg-ht-purple hover:text-white;
+  @apply ring-ht-greem text-ht-greem;
+  @apply hover:bg-ht-greem hover:text-white;
  }
 
  #header[data-header="active"] .header-link {
   @apply text-black hover:text-black/70;
  }
  #header[data-header="active"] .header-logo-hostoo {
-  @apply text-ht-purple hover:text-ht-lighter-purple;
+  @apply text-ht-purple hover:text-ht-greem;
  }
 
  .product-itens-link {
@@ -119,7 +119,7 @@
 
  .link-footer {
   @apply py-2 text-base text-black/80 leading-tight block;
-  @apply hover:text-ht-purple transition-colors duration-100;
+  @apply hover:text-ht-greem transition-colors duration-100;
  }
 
  /* Form */

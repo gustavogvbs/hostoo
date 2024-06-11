@@ -597,7 +597,7 @@ video {
 
 .header-logo-hostoo:hover {
   --tw-text-opacity: 1;
-  color: rgb(240 232 255 / var(--tw-text-opacity));
+  color: rgb(54 226 143 / var(--tw-text-opacity));
 }
 
 .header-link-secundary {
@@ -633,14 +633,14 @@ video {
 
 #header[data-header="active"] .header-link-secundary {
   --tw-text-opacity: 1;
-  color: rgb(99 91 255 / var(--tw-text-opacity));
+  color: rgb(54 226 143 / var(--tw-text-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 91 255 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(54 226 143 / var(--tw-ring-opacity));
 }
 
 #header[data-header="active"] .header-link-secundary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 91 255 / var(--tw-bg-opacity));
+  background-color: rgb(54 226 143 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -661,7 +661,7 @@ video {
 
 #header[data-header="active"] .header-logo-hostoo:hover {
   --tw-text-opacity: 1;
-  color: rgb(209 184 255 / var(--tw-text-opacity));
+  color: rgb(54 226 143 / var(--tw-text-opacity));
 }
 
 .product-itens-link {
@@ -927,9 +927,6 @@ video {
   line-height: 1.25;
 }
 
-.list-links-footer {
-}
-
 .link-footer {
   display: block;
   padding-top: 0.5rem;
@@ -945,7 +942,7 @@ video {
 
 .link-footer:hover {
   --tw-text-opacity: 1;
-  color: rgb(99 91 255 / var(--tw-text-opacity));
+  color: rgb(54 226 143 / var(--tw-text-opacity));
 }
 
 /* Form */
@@ -1612,16 +1609,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
 
 .pb-28 {
   padding-bottom: 7rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .pt-20 {
@@ -1638,10 +1635,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 
 .text-center {
@@ -1885,6 +1878,11 @@ video {
   --tw-gradient-to: rgba(26, 24, 82, 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgba(26, 24, 82, 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
   --tw-gradient-to: rgba(27, 25, 84, 5) var(--tw-gradient-to-position);
+}
+
+.hover\:text-ht-greem:hover {
+  --tw-text-opacity: 1;
+  color: rgb(54 226 143 / var(--tw-text-opacity));
 }
 
 .data-\[view\=hidden\]\:max-h-\[756px\][data-view=hidden] {
