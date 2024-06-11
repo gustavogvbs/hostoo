@@ -225,7 +225,7 @@
        <img src="./assets/clientes.png" alt="clientes satisfeitos" />
       </div>
       <h1
-       class="text-7xl leading-tight font-semibold text-white text-center my-8 max-w-5xl"
+       class="text-7xl leading-tight font-semibold text-white text-center my-8 max-w-5xl max-sm:text-5xl"
       >
        Recursos de hospedagem avançados a um clique
       </h1>
@@ -235,7 +235,7 @@
        Seja qual for o tamanho do seu projeto, a Hostoo tem uma solução com
        segurança, estabilidade e alto desempenho pra você.
       </p>
-      <div class="flex gap-8 mt-8 items-center">
+      <div class="flex gap-8 mt-8 items-center max-sm:flex-col max-sm:gap-4">
        <a class="button-green" href="https://app.hostoo.io/register"
         >Testar gratuitamente</a
        >
@@ -313,19 +313,23 @@
   </div>
   <main class="relative z-20">
    <section class="bg-ht-lighter-gray pt-28">
-    <div class="w-container max-w-container m-auto flex relative">
-     <div class="w-[66%] pb-28">
+    <div
+     class="w-container max-w-container m-auto flex relative max-sm:flex-col"
+    >
+     <div class="w-[66%] pb-28 max-sm:w-full max-md:pb-14">
       <span class="font-semibold font-base leading-tight text-ht-purple"
        >Agência ou Multisites</span
       >
-      <h2 class="text-6xl text-black font-bold leading-tight mt-4 mb-6">
+      <h2
+       class="text-6xl text-black font-bold leading-tight mt-4 mb-6 max-sm:text-4xl"
+      >
        A Hostoo impulsiona seus parceiros
       </h2>
       <p class="text-lg leading-tight">
        Se você tem múltiplos sites, é agência ou ainda revende hospedagens,
        criamos ferramentas especiais para você crescer com a gente.
       </p>
-      <div class="grid grid-cols-2 gap-6 mt-12">
+      <div class="grid grid-cols-2 gap-6 mt-12 max-sm:grid-cols-1">
        <div
         class="bg-ht-purple text-white rounded-3xl p-8 flex flex-col gap-6 justify-between"
        >
@@ -363,8 +367,16 @@
        </div>
       </div>
      </div>
-     <div class="absolute right-0 bottom-0 w-[35%]">
-      <img src="./assets/image-section-one.png" alt="" />
+     <div
+      class="absolute right-0 bottom-0 w-[35%] max-sm:relative max-sm:w-full"
+     >
+      <img class="max-sm:hidden" src="./assets/image-section-one.png" alt="" />
+      <img
+       width="100%"
+       class="max-sm:block hidden"
+       src="./assets/image-section-one-mobile.png"
+       alt=""
+      />
      </div>
     </div>
    </section>
@@ -375,15 +387,17 @@
        <img src="./assets/escalar-servidor-purple.svg" width="24px" alt="" />
        <span class="text-base">Escale facilmente </span>
       </span>
-      <h2 class="text-6xl font-bold leading-tight text-black">
+      <h2 class="text-6xl font-bold leading-tight text-black max-md:text-4xl">
        Altere o seu plano a qualquer momento,
        <span class="text-neutral-300">de acordo com a sua demanda.</span>
       </h2>
      </div>
-     <div class="grid grid-cols-3 gap-8">
-      <div class="col-span-2 rounded-3xl relative overflow-hidden">
-       <div class="relative z-10 grid grid-cols-2">
-        <div class="p-12">
+     <div class="grid grid-cols-3 gap-8 max-sm:grid-cols-1">
+      <div
+       class="col-span-2 rounded-3xl relative overflow-hidden max-sm:col-span-1"
+      >
+       <div class="relative z-10 grid grid-cols-2 max-sm:grid-cols-1">
+        <div class="p-12 max-sm:p-6 max-sm:mb-12">
          <h3 class="font-bold text-3xl leading-tight text-white mb-4">
           Planos flexíveis para a sua demanda
          </h3>
@@ -412,8 +426,8 @@
           ></a>
          </span>
         </div>
-        <div class="flex justify-end">
-         <img src="./assets/slider-planos.png" alt="" />
+        <div class="flex justify-end items-center max-sm:max-h-80 max-sm:pl-6">
+         <img class="max-sm:w-full" src="./assets/slider-planos.png" alt="" />
         </div>
        </div>
        <div
@@ -422,7 +436,7 @@
       </div>
       <div class="bg-ht-lighter-gray col-span-1 rounded-3xl overflow-hidden">
        <div class="relative h-full">
-        <div class="p-12 relative z-10">
+        <div class="p-12 relative z-10 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-black mb-4">
           Servidores nacionais ou internacionais
          </h3>
@@ -450,14 +464,16 @@
           ></a>
          </span>
         </div>
-        <div class="absolute right-0 left-0 bottom-0 z-0">
+        <div
+         class="absolute right-0 left-0 bottom-0 z-0 max-sm:relative max-sm:h-60 flex items-end"
+        >
          <img src="./assets/word.png" alt="" />
         </div>
        </div>
       </div>
       <div class="bg-ht-lighter-gray col-span-1 rounded-3xl overflow-hidden">
        <div class="relative h-full">
-        <div class="p-12 relative z-10">
+        <div class="p-12 relative z-10 max-sm:h-60">
          <h3 class="font-bold text-3xl leading-tight text-black mb-4">
           Performance acima da média
          </h3>
@@ -485,14 +501,18 @@
           ></a>
          </span>
         </div>
-        <div class="absolute right-0 left-0 bottom-0 z-0">
+        <div
+         class="absolute right-0 left-0 bottom-0 z-0 max-sm:relative max-sm:h-80 flex items-end"
+        >
          <img src="./assets/99-desenpenho.png" alt="" />
         </div>
        </div>
       </div>
-      <div class="col-span-2 rounded-3xl relative overflow-hidden">
-       <div class="relative z-10 grid grid-cols-2">
-        <div class="p-12">
+      <div
+       class="col-span-2 rounded-3xl relative overflow-hidden max-sm:col-span-1"
+      >
+       <div class="relative z-10 grid grid-cols-2 max-sm:grid-cols-1">
+        <div class="p-12 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-white mb-4">
           Balanceamento de tráfego em um clique
          </h3>
@@ -521,8 +541,8 @@
           ></a>
          </span>
         </div>
-        <div class="flex justify-end">
-         <img src="./assets/balanciamento-ativo.png" alt="" />
+        <div class="flex justify-end items-start max-sm:max-h-96 max-sm:pl-6">
+         <img width="100%" src="./assets/balanciamento-ativo.png" alt="" />
         </div>
        </div>
        <div
@@ -530,11 +550,13 @@
        ></div>
       </div>
      </div>
-     <div class="max-w-4xl py-28 flex flex-col gap-6 items-center m-auto">
+     <div
+      class="max-w-4xl py-28 flex flex-col gap-6 items-center m-auto max-sm:py-16"
+     >
       <picture>
        <img src="./assets/heading.svg" alt="" />
       </picture>
-      <h2 class="font-bold text-4xl leading-tight text-center">
+      <h2 class="font-bold text-4xl leading-tight text-center max-sm:text-2xl">
        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
        varius enim in eros elementum tristique.
       </h2>
@@ -557,21 +579,30 @@
     <div class="w-container max-w-container m-auto relative z-10">
      <div class="max-w-[832px] flex flex-col gap-6 mb-20 items-center m-auto">
       <picture>
-       <img src="./assets/thunder-shield.png" width="186px" alt="" />
+       <img
+        src="./assets/thunder-shield.png"
+        class="max-sm:max-w-24"
+        width="186px"
+        alt=""
+       />
       </picture>
-      <h2 class="text-6xl font-bold leading-tight text-white text-center">
+      <h2
+       class="text-6xl font-bold leading-tight text-white text-center max-sm:text-4xl"
+      >
        Segurança avançada e alta disponibilidade.
       </h2>
      </div>
-     <div class="grid grid-cols-3 gap-8">
-      <div class="col-span-2 rounded-3xl relative overflow-hidden">
-       <div class="relative z-10 grid grid-cols-2">
-        <div class="p-12">
+     <div class="grid grid-cols-3 gap-8 max-sm:grid-cols-1">
+      <div
+       class="col-span-2 rounded-3xl relative overflow-hidden max-sm:col-span-1"
+      >
+       <div class="relative z-10 grid grid-cols-2 max-sm:grid-cols-1">
+        <div class="p-12 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-white mb-4">
           Tráfego seguro com certificado SSL grátis
          </h3>
          <p class="mb-8 text-base text-white/75 leading-tight">
-          É possível alterar o plano de sua hospedagem a qualquer momento de
+          É possível alterar o plano de sua hospedagem a qualquer momento de
           forma muito prática.
          </p>
 
@@ -595,7 +626,7 @@
           ></a>
          </span>
         </div>
-        <div class="flex justify-end">
+        <div class="flex justify-end items-start max-sm:max-h-80">
          <img src="./assets/certificado-ssl.png" alt="" />
         </div>
        </div>
@@ -605,7 +636,7 @@
       </div>
       <div class="bg-ht-lighter-gray col-span-1 rounded-3xl overflow-hidden">
        <div class="relative h-full">
-        <div class="p-12 relative z-10">
+        <div class="p-12 relative z-10 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-black mb-4">
           Proteção aprimorada contra ataques DDoS
          </h3>
@@ -633,14 +664,16 @@
           ></a>
          </span>
         </div>
-        <div class="absolute right-0 left-0 bottom-0 z-0">
-         <img src="./assets/word.png" alt="" />
+        <div
+         class="absolute right-0 left-0 bottom-0 z-0 max-sm:relative max-sm:h-64 flex items-end"
+        >
+         <img src="./assets/proteção-ddos.png" alt="" />
         </div>
        </div>
       </div>
       <div class="bg-ht-lighter-gray col-span-1 rounded-3xl overflow-hidden">
        <div class="relative h-full">
-        <div class="p-12 relative z-10">
+        <div class="p-12 relative z-10 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-black mb-4">
           Redundância de DNS nativa
          </h3>
@@ -667,14 +700,18 @@
           ></a>
          </span>
         </div>
-        <div class="absolute right-0 left-0 bottom-0 z-0">
-         <img src="./assets/99-desenpenho.png" alt="" />
+        <div
+         class="absolute right-0 left-0 bottom-0 z-0 max-sm:relative max-sm:h-64 flex items-end"
+        >
+         <img src="./assets/dns-nativo.png" alt="" />
         </div>
        </div>
       </div>
-      <div class="col-span-2 rounded-3xl relative overflow-hidden">
-       <div class="relative z-10 grid grid-cols-2">
-        <div class="p-12">
+      <div
+       class="col-span-2 rounded-3xl relative overflow-hidden max-sm:col-span-1"
+      >
+       <div class="relative z-10 grid grid-cols-2 max-sm:grid-cols-1">
+        <div class="p-12 max-sm:p-6">
          <h3 class="font-bold text-3xl leading-tight text-white mb-4">
           Backup automático do seu site
          </h3>
@@ -704,8 +741,8 @@
           ></a>
          </span>
         </div>
-        <div class="flex justify-end">
-         <img src="./assets/balanciamento-ativo.png" alt="" />
+        <div class="flex justify-end items-center max-sm:h-96 max-sm:pl-6">
+         <img width="100%" src="./assets/backup-auto.png" alt="" />
         </div>
        </div>
        <div
@@ -717,7 +754,9 @@
       <picture>
        <img src="./assets/heading.svg" alt="" />
       </picture>
-      <h2 class="font-bold text-4xl text-white leading-tight text-center">
+      <h2
+       class="font-bold text-4xl text-white leading-tight text-center max-sm:text-2xl"
+      >
        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
        varius enim in eros elementum tristique.
       </h2>
@@ -737,16 +776,18 @@
       <span class="text-ht-dark-purple font-semibold text-base text-center"
        >Altere a qualquer momento</span
       >
-      <h2 class="text-6xl leading-tight font-bold text-center mt-4 mb-6">
+      <h2
+       class="text-6xl leading-tight font-bold text-center mt-4 mb-6 max-sm:text-4xl"
+      >
        Planos do tamanho da sua necessidade
       </h2>
       <p class="text-lg leading-tight text-black/70 text-center">
        Nossos planos são flexíveis e podem ser alterados a qualquer momento.
       </p>
      </div>
-     <div class="grid grid-cols-3 gap-8">
-      <div class="col-span-2">
-       <div class="p-10 bg-white rounded-3xl">
+     <div class="grid grid-cols-3 gap-8 max-sm:grid-cols-1">
+      <div class="col-span-2 max-sm:col-span-1">
+       <div class="p-10 bg-white rounded-3xl max-sm:p-6">
         <div>
          <h3 class="text-3xl leading-tight font-bold text-black mb-2">
           Personalize sua hospedagem
@@ -794,7 +835,7 @@
          </div>
         </form>
 
-        <form class="w-full pb-14">
+        <div class="w-full pb-14">
          <div class="w-full relative px-3 bg-ht-ligth-purple rounded-full">
           <div class="w-full h-4 relative mb-3">
            <div
@@ -880,7 +921,7 @@
            </div>
           </div>
          </div>
-        </form>
+        </div>
 
         <div class="flex flex-col gap-3">
          <div class="flex flex-col gap-2">
@@ -1143,14 +1184,18 @@
         ></a>
        </div>
       </div>
-      <div class="col-span-3 bg-ht-purple rounded-3xl">
-       <div class="grid grid-cols-[254px_1fr]">
+      <div class="col-span-3 bg-ht-purple rounded-3xl max-sm:col-span-1">
+       <div
+        class="grid grid-cols-[254px_1fr] max-sm:flex max-sm:flex-col-reverse"
+       >
         <div class="relative">
-         <div class="absolute bottom-0 left-0">
+         <div class="absolute bottom-0 left-0 max-sm:relative">
           <img width="254px" src="./assets/revendedor.png" alt="" />
          </div>
         </div>
-        <div class="text-white flex justify-between items-center px-10 py-16">
+        <div
+         class="text-white flex justify-between items-center px-10 py-16 max-sm:py-8 max-sm:px-6 max-sm:flex-col max-sm:items-start gap-6"
+        >
          <div class="flex flex-col gap-1">
           <h4 class="text-3xl leading-tight font-bold">
            Tem mais de 5 sites ou é revendedor?
@@ -1175,10 +1220,12 @@
      </div>
     </div>
    </section>
-   <section class="py-28 bg-ht-purple bg-opacity-10">
+   <section class="py-28 bg-ht-purple bg-opacity-10 max-sm:py-16">
     <div class="w-container max-w-container m-auto">
      <div class="flex flex-col items-center gap-16">
-      <h2 class="text-6xl leading-tight font-bold text-center max-w-3xl">
+      <h2
+       class="text-6xl leading-tight font-bold text-center max-w-3xl max-sm:text-4xl"
+      >
        Recursos liberados para todos os planos
       </h2>
       <div class="flex-wrap flex gap-6 items-center justify-center max-w-6xl">
@@ -1230,16 +1277,16 @@
      </div>
     </div>
    </section>
-   <section class="py-28">
+   <section class="py-28 max-sm:py-16">
     <div class="w-container max-w-container m-auto">
      <div class="max-w-3xl flex flex-col gap-6 items-center m-auto">
       <picture>
        <img src="./assets/heading.svg" alt="" />
       </picture>
-      <h2 class="font-bold text-6xl leading-tight text-center">
+      <h2 class="font-bold text-6xl leading-tight text-center max-sm:text-4xl">
        + de 10.000 clientes não podem estar errados.
       </h2>
-      <span class="text-lg text-black/60">
+      <span class="text-lg text-black/60 text-center">
        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </span>
      </div>
@@ -1247,9 +1294,9 @@
       <div
        id="testimonials-container"
        data-view="hidden"
-       class="grid grid-cols-3 gap-8 overflow-hidden data-[view=hidden]:max-h-[756px] transition-all duration-1000"
+       class="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-8 overflow-hidden data-[view=hidden]:max-h-[756px] transition-all duration-1000"
       >
-       <div class="flex flex-col gap-8">
+       <div class="flex flex-col gap-8 max-sm:hidden">
         <div class="card-depoimentos">
          <p class="text-lg text-black leading-snug">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -1326,7 +1373,7 @@
          </div>
         </div>
        </div>
-       <div class="flex flex-col gap-8">
+       <div class="flex flex-col gap-8 max-md:hidden">
         <div class="card-depoimentos">
          <p class="text-lg text-black leading-snug">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -1500,12 +1547,14 @@
    </section>
    <section class="pt-20 bg-radio-gradient-black-to-lighter-lg relative">
     <div class="w-container max-w-container m-auto">
-     <div class="flex items-end">
-      <div class="max-w-xl mb-28">
+     <div class="flex items-end max-sm:flex-col">
+      <div class="max-w-xl mb-28 text-center max-sm:mb-10">
        <span class="text-ht-dark-purple font-bold"
         >Migração grátis e em até 24 horas</span
        >
-       <h2 class="text-6xl leading-tight text-white font-bold mt-4 mb-8">
+       <h2
+        class="text-6xl leading-tight text-white font-bold mt-4 mb-8 max-sm:text-4xl"
+       >
         Migre para a Hostoo gratuitamente
        </h2>
        <p class="text-white/70 text-lg leading-tight mb-8 max-w-lg">
@@ -1513,24 +1562,28 @@
         garantirá que sua transferência seja rápida e segura, sem perda de
         dados.
        </p>
-       <div class="flex">
+       <div class="flex max-sm:justify-center">
         <a href="https://app.hostoo.io/migration" class="button-green block"
          >Migre agora para a Hostoo</a
         >
        </div>
       </div>
 
-      <div class="relative z-10"><img src="./assets/person.png" alt="" /></div>
+      <div class="relative z-10 max-sm:max-w-72 max-sm:m-auto">
+       <img src="./assets/person.png" alt="" />
+      </div>
      </div>
     </div>
-    <div class="absolute bottom-0 right-0 z-0">
+    <div class="absolute bottom-0 right-0 z-0 max-sm:left-6">
      <img src="./assets/desktop.png" height="100%" alt="" />
     </div>
    </section>
   </main>
   <footer class="bg-ht-lighter-gray">
-   <div class="w-container max-w-container m-auto py-20">
-    <div class="pb-20 grid grid-cols-[320px_1fr] gap-20">
+   <div class="w-container max-w-container m-auto py-20 max-sm:py-10">
+    <div
+     class="pb-20 grid grid-cols-[320px_1fr] gap-20 max-sm:grid-cols-1 max-sm:gap-10 max-sm:pb-10"
+    >
      <div class="max-w-xs">
       <a href="/">
        <span
@@ -1662,7 +1715,7 @@
        </a>
       </div>
      </div>
-     <div class="grid grid-cols-3">
+     <div class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-6">
       <div>
        <div class="flex flex-col gap-4">
         <h6 class="link-title-footer">Produtos</h6>
@@ -1844,7 +1897,9 @@
       </div>
      </div>
     </div>
-    <div class="border-t-2 ring-zinc-300 pt-8 flex justify-between">
+    <div
+     class="border-t-2 ring-zinc-300 pt-8 flex justify-between max-sm:flex-col gap-4"
+    >
      <div class="text-sm leading-tight">
       <p>&copy; 2024 Hostoo. Todos os direitos reservados.</p>
       <p>
