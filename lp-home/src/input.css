@@ -9,7 +9,7 @@
 
   .header-link.icon {
     @apply flex gap-1 [&_>_span]:rotate-90;
-    @apply [&_>_span]:hover:-rotate-90;
+    @apply [&_>_span]:hover:-rotate-0;
     @apply [&_>_span]:transition-transform [&_>_span]:duration-300;
   }
 
@@ -91,8 +91,8 @@
 
   .button-link-purple {
     @apply flex gap-2 items-center text-base p-2 text-ht-lighter-purple;
-    @apply hover:text-ht-ligth-purple [&_>_span]:hover:rotate-90;
-    @apply [&_>_span]:transition-transform [&_>_span]:duration-200;
+    @apply hover:text-ht-ligth-purple [&_>_span]:rotate-90 [&_>_span]:hover:rotate-0;
+    @apply [&_>_span]:transition-transform [&_>_span]:duration-300;
     @apply transition-colors duration-300;
   }
 
@@ -166,7 +166,7 @@
 
   #header-menu-mobile {
     @apply hidden translate-x-full transition-transform duration-500;
-    @apply fixed top-0 bottom-0 left-0 right-0 z-50 bg-white px-6 py-8;
+    @apply fixed top-0 bottom-0 left-0 right-0 z-50 bg-white overflow-y-scroll;
   }
 
   #header-menu-mobile .header-link {
@@ -194,7 +194,7 @@
   }
 
   #header-menu-mobile .menu-product-list[data-product="active"] .wrapper-links {
-    @apply h-[304px];
+    @apply h-[324px];
   }
 
   #header-menu-mobile .header-link-secundary {
